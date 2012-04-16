@@ -3,16 +3,30 @@ Detectives = new Meteor.Collection("detectives");
 
 if (Meteor.is_client) {
   Template.thelist.detectives = function () {
-	  return Detectives.find();
+	  return Detectives.find({}, {sort: {votes: -1, name: 1}});
+  };
+  
+  Template.thelist.selected_name = function () {
+     var detective = Detectives.findOne(Session.get("selected_detective"));
+     return detective && detective.name;
   };
 
-  //Template.hello.events = {
-  //  'click input' : function () {
-  //    // template data, if any, is available in 'this'
-  //    if (typeof console !== 'undefined')
-  //      console.log("You pressed the button");
-  //  }
-  //};
+  Template.detective.selected = function () {
+    return Session.equals("selected_detective", this._id) ? "selected" : '';
+  };
+  
+  Template.thelist.events = {
+    'click input.vote': function () {
+      Detectives.update(Session.get("selected_detective"), {$inc: {votes: 1}});
+    }
+  };
+  
+  // sets selected detective in session
+  Template.detective.events = {
+    'click': function () {
+      Session.set("selected_detective", this._id);
+    }
+  };
 }
 
 if (Meteor.is_server) {
