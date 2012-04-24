@@ -9,15 +9,9 @@
 </body>
 
 <template name="thelist">
-    {{#each detectives}}
-      {{> detective}}
-    {{/each}}
-  {{#if selected_name}}
-  <div class="details">
-    <div class="name">{{selected_name}}</div>
-    <input type="button" class="vote" value="Give 1 points" />
-  </div>
-  {{/if}}
+  {{#each detectives}}
+    {{> detective}}
+  {{/each}}
 
   {{#unless selected_name}}
   <div class="none">Select your favourite detective</div>
@@ -29,5 +23,6 @@
   <div class="detective {{selected}}">
     <span class="name">{{name}}</span>
     <span class="votes">{{votes}}</span>
+	<span class="action"><input type="button" class="vote" value="Vote" /></span>
   </div>
 </template>
