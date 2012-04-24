@@ -48,8 +48,15 @@ if (Meteor.is_server) {
 	                 "Hercule Poirot",
 	                 "Miss Marple",
 	                 "Father Brown"];		
-	     for (var i = 0; i < detective_data.length; i++)
-	       Detectives.insert({name: detective_data[i], votes: 0});
+      for (var i = 0; i < detective_data.length; i++) {
+        Detectives.insert({
+        //{name: detective_data[i], votes: 0},
+          name: detective_data[i],
+          description: 'test',
+          imagename: 'test.png',
+          votes: 0
+       });
+      }
     }
   });
 }

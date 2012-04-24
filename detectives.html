@@ -22,7 +22,9 @@
 <template name="detective">
   <div class="detective {{selected}}">
     <span class="name">{{name}}</span>
+    <span class="description">{{description}}</span>
+    <span class="image"><img src="{{imagename}}"></span>
     <span class="votes">{{votes}}</span>
-	<span class="action"><input type="button" class="vote" value="Vote" /></span>
+    <span class="action"><input type="button" class="vote" value="Vote"></span>
   </div>
 </template>
