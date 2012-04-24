@@ -1,5 +1,17 @@
 // Set up a collection of detectives
+// Detectives -- {name: String,
+//                description: String,
+//                imagename: String,
+//                votes: Number}
 Detectives = new Meteor.Collection("detectives");
+/*
+  detective : {
+           "name" : <title>,
+           "description" : <description>,
+           "imagename" : <imagename>,
+           "votes" : <votes>
+  }
+*/
 
 if (Meteor.is_client) {
   Template.thelist.detectives = function () {
