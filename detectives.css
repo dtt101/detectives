@@ -144,6 +144,17 @@
 	display: block;
 }
 /* custom styles */
+@media screen and (max-width: 320px) {
+	.grid_1,
+	.grid_2,
+	.grid_3 {	
+		display: block;
+		float: none;
+	}
+	.clear {
+		display: none;
+	}
+}
 .detective {
 }
 
