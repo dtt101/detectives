@@ -156,11 +156,19 @@
 	}
 }
 .detective {
+	padding-bottom:15px;
 }
-
+.detective h4 {
+	margin-bottom:0;
+}
 .detective .name {
+	font-weight: bold;
 }
-
+.detective .description {
+}
+.detective .image {
+	display: inline;
+}
 .detective .votes {
 }
 .detective .action {
