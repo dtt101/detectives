@@ -38,7 +38,9 @@ if (Meteor.is_server) {
     if (Detectives.find().count() === 0) {
 	    var detective_data = ["Sherlock Holmes",
 	                 "Hercule Poirot",
-	                 "Miss Marple",
+	                 "Columbo",
+									 "Miss Marple",
+	                 "Magnum PI",
 	                 "Father Brown"];		
       for (var i = 0; i < detective_data.length; i++) {
         Detectives.insert({
