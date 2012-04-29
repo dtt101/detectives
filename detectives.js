@@ -49,8 +49,13 @@ if (Meteor.is_server) {
           imagename: 'test.png',
           votes: 0
        });
-      }
+      } 
     }
+    
+    // disable client db access
+		 Meteor.default_server.method_handlers['/detectives/insert'] = function () {};
+     Meteor.default_server.method_handlers['/detectives/update'] = function () {};
+     Meteor.default_server.method_handlers['/detectives/remove'] = function () {};
   });
   
   Meteor.methods({
