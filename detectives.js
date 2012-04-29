@@ -21,7 +21,7 @@ if (Meteor.is_client) {
   
   Template.thelist.events = {
     'click input.vote': function () {
-      Detectives.update(Session.get("selected_detective"), {$inc: {votes: 1}});
+			Meteor.call('vote', Session.get("selected_detective"));
     }
   };
   
@@ -52,4 +52,12 @@ if (Meteor.is_server) {
       }
     }
   });
+  
+  Meteor.methods({
+  	vote: doVote,
+  });
+  
+	function doVote(detective_id) {
+		Detectives.update(detective_id, {$inc: {votes: 1}});
+	}
 }
