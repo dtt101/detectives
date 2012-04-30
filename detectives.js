@@ -6,6 +6,19 @@
 Detectives = new Meteor.Collection("detectives");
 
 if (Meteor.is_client) {
+	
+	// storage helpers (uses amplify.js)
+	// set that the user has voted
+	var setVoted = function() {
+		amplify.store("voted", true );
+	}
+	
+	// return vote state
+	var getVoted = function() {
+		return amplify.store("voted");
+	}
+	
+	// template properties
   Template.thelist.detectives = function () {
 	  return Detectives.find({}, {sort: {votes: -1, name: 1}});
   };
@@ -19,9 +32,14 @@ if (Meteor.is_client) {
     return Session.equals("selected_detective", this._id) ? "selected" : '';
   };
   
+  Template.detective.voted = function () {
+		return getVoted();
+  }
+  
   Template.thelist.events = {
     'click input.vote': function () {
 			Meteor.call('vote', Session.get("selected_detective"));
+			setVoted();
     }
   };
   

@@ -41,6 +41,8 @@
     <h4><span class="name">{{name}}</span></h4>
     <span class="description">{{description}}</span>
     <span class="votes">{{votes}}</span>
+    {{#unless voted}}
     <span class="action"><input type="button" class="vote" value="Vote"></span>
+    {{/unless}}
   </div>
 </template>
