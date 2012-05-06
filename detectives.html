@@ -5,9 +5,9 @@
 
 <body>
   <div class="container container_3">
-    <h1 class="grid_3">
-      Detectives
-    </h1>
+    <h2 class="grid_3">
+      Who is the greatest detective of all time?
+    </h2>
     <div class='clear'>&nbsp;</div>
     
     <div class='grid_1'>
@@ -28,11 +28,6 @@
   {{#each detectives}}
     {{> detective}}
   {{/each}}
-
-  {{#unless selected_name}}
-  <div class="none">Select your favourite detective</div>
-  {{/unless}}
-
 </template>
 
 <template name="detective">

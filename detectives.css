@@ -154,6 +154,12 @@
 	.clear {
 		display: none;
 	}
+	div#essay {
+		padding-right: 0px;
+	}
+}
+div#essay {
+	padding-right: 50px;
 }
 .detective {
 	padding-bottom:15px;
@@ -168,6 +174,8 @@
 }
 .detective .image {
 	display: inline;
+	width: 174px;
+	height: 204px;
 }
 .detective .votes {
 }

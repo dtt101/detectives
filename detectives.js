@@ -54,17 +54,17 @@ if (Meteor.is_client) {
 if (Meteor.is_server) {
   Meteor.startup(function () {
     if (Detectives.find().count() === 0) {
-	    var detective_data = ["Sherlock Holmes",
-	                 "Hercule Poirot",
-	                 "Columbo",
-									 "Miss Marple",
-	                 "Magnum PI",
-	                 "Father Brown"];		
+	    var detective_data = [["Sherlock Holmes", "test description", "sherlock.png"],
+	                 ["Hercule Poirot", "test description", "hercule.png"],
+	                 ["Columbo", "test description", "test.png"],
+									 ["Miss Marple", "test description", "test.png"],
+	                 ["Magnum PI", "test description", "test.png"],
+	                 ["Father Brown", "test description", "test.png"]];		
       for (var i = 0; i < detective_data.length; i++) {
         Detectives.insert({
-          name: detective_data[i],
-          description: 'test',
-          imagename: 'test.png',
+          name: detective_data[i][0],
+          description: detective_data[i][1],
+          imagename: detective_data[i][2],
           votes: 0
        });
       } 
