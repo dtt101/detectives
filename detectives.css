@@ -162,7 +162,8 @@ div#essay {
 	padding-right: 50px;
 }
 .detective {
-	padding-bottom:15px;
+	margin-bottom:30px;
+	height: 204px;
 }
 .detective h4 {
 	margin-bottom:0;
@@ -173,7 +174,7 @@ div#essay {
 .detective .description {
 }
 .detective .image {
-	display: inline;
+	float:left;
 	width: 174px;
 	height: 204px;
 }
