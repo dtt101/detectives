@@ -56,10 +56,10 @@ if (Meteor.is_server) {
     if (Detectives.find().count() === 0) {
 	    var detective_data = [["Sherlock Holmes", "test description", "sherlock.png"],
 	                 ["Hercule Poirot", "test description", "hercule.png"],
-	                 ["Columbo", "test description", "test.png"],
-									 ["Miss Marple", "test description", "test.png"],
-	                 ["Magnum PI", "test description", "test.png"],
-	                 ["Father Brown", "test description", "test.png"]];		
+	                 ["Columbo", "test description", "columbo.png"],
+									 ["Miss Marple", "test description", "missmarple.png"],
+	                 ["Magnum PI", "test description", "magnum.png"],
+	                 ["Father Brown", "test description", "fatherbrown.png"]];		
       for (var i = 0; i < detective_data.length; i++) {
         Detectives.insert({
           name: detective_data[i][0],
