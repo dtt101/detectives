@@ -12,6 +12,11 @@ if (Meteor.is_client) {
 	var setVoted = function() {
 		amplify.store("voted", true );
 	}
+
+	// TODO - remove
+	var setNotVoted = function() {
+		amplify.store("voted", false );
+	}
 	
 	// return vote state
 	var getVoted = function() {
