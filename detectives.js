@@ -65,7 +65,7 @@ if (Meteor.is_server) {
 				["Columbo", "columbo.png", ["Humble, yet with a downbeat charm", "As a detective in the modern world, he solves arguably more sophisticated cases than his Victorian forebears", "A true genius, who never lets a case go 'Just one more thing...'"], ["The murderer is usually the creepy one with the sleek hairdo. It is possible Columbo has noticed this"]],
 				["Miss Marple", "missmarple.png", ["Her slow, information gathering approach is a proven success", "Excellent at finding clues that others would ignore", "She rocks the old lady shtick, and is often underestimated"], ["If it comes to a throw-down, she can be in your gang", "Body-count! Just like Poirot, she struggles to keep on lid on the deaths"]],
 				["Magnum PI", "magnum.png", ["Nice shirt. Nice car. Great 'tache", "Useful when things get physical", "A certain naive intellect, charm and luck"], ["Possibly not the brightest of buttons. Took him at least 5 series to work out that Higgins was Robin Masters", "Weakness for women he finds attractive"]],
-				["Father Brown", "fatherbrown.png", [""], [""]],
+				["Father Brown", "fatherbrown.png", ["A great listener, able to solve cases with the minimum of intervention", "Uses his bumbling priestly exterior to great effect, never putting the criminal on guard", "Another astonishing mind, and open to all conclusions"], ["Like Miss Marple, he does not bring much ruckus", "His cases are often idiosyncratic to say the least"]],
 			];		
       for (var i = 0; i < detective_data.length; i++) {
         Detectives.insert({
