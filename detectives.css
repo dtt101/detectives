@@ -143,6 +143,9 @@
 .clearfix {
 	display: block;
 }
+
+/* item styles */ 
+
 div#essay {
 	padding-right: 50px;
 }
@@ -183,7 +186,8 @@ div#essay {
 
 .none {
 }
-/* custom styles */
+
+/* mobile styles */
 @media screen and (max-width: 320px) {
 	.grid_1,
 	.grid_2,
