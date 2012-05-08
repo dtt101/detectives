@@ -61,8 +61,8 @@ if (Meteor.is_server) {
     if (Detectives.find().count() === 0) {
 	    var detective_data = [
 		    ["Sherlock Holmes", "sherlock.png", ["Excellent on a crime scene", "Peerless at deduction", "The spark of creative genius that enable him to solve the toughest mysteries", "Stylish"], ["His treatment of Doctor Watson and Mrs Hudson often leaves a lot to be desired", "His arrogance often comes at a cost of some anxiety to his clients"]],
-				["Hercule Poirot", "hercule.png", [""], [""]],
-				["Columbo", "columbo.png", [""], [""]],
+				["Hercule Poirot", "hercule.png", ["Another expert at finding clues", "Amazing senstivity to relationships between strangers", "Fantastic deductive ability"], ["Annoying mannerisms", "His attitude towards Hastings is absolutely reprehensible", "The bodycount in his investigations is unacceptable, rarely does he avoid one or more repeat murders"]],
+				["Columbo", "columbo.png", ["Humble, yet with a downbeat charm", "As a detective in the modern world, he solves arguably more sophisticated cases than his Victorian forebears", "A true genius, who never lets a case go 'Just one more thing...'"], ["The murderer is usually the creepy one with the sleek hairdo. It is possible Columbo has noticed this"]],
 				["Miss Marple", "missmarple.png", [""], [""]],
 				["Magnum PI", "magnum.png", [""], [""]],
 				["Father Brown", "fatherbrown.png", [""], [""]],
