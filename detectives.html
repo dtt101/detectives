@@ -42,6 +42,7 @@ The competition will end when we reach 10000 votes, and then, only then, will th
 </p>
       </div>
       </div><div class='grid_2'>
+      <h4>Choose your detective...</h4>
       {{> thelist}}
       </div>
       <div class='clear'>&nbsp;</div>    
@@ -59,7 +60,18 @@ The competition will end when we reach 10000 votes, and then, only then, will th
   <div class="detective {{selected}}">
     <span class="image"><img src="{{imagename}}"></span>
     <h4><span class="name">{{name}}</span></h4>
-    <span class="description">{{description}}</span>
+    <span class="description">
+      <ul class="pros">
+        {{#each pros}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <ul class="cons">
+        {{#each cons}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </span>
     <span class="votes">{{votes}}</span>
     {{#unless voted}}
     <span class="action"><input type="button" class="vote" value="Vote"></span>

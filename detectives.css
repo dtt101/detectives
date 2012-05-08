@@ -145,13 +145,16 @@
 }
 
 /* item styles */ 
-
+body {
+	padding-top: 20px;
+}
 div#essay {
 	padding-right: 50px;
 }
 .detective {
 	margin-bottom:30px;
 	height: 204px;
+	cursor: pointer;
 }
 .detective h4 {
 	margin-bottom:0;

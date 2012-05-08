@@ -60,18 +60,19 @@ if (Meteor.is_server) {
   Meteor.startup(function () {
     if (Detectives.find().count() === 0) {
 	    var detective_data = [
-		    ["Sherlock Holmes", "test description", "sherlock.png"],
-				["Hercule Poirot", "test description", "hercule.png"],
-				["Columbo", "test description", "columbo.png"],
-				["Miss Marple", "test description", "missmarple.png"],
-				["Magnum PI", "test description", "magnum.png"],
-				["Father Brown", "test description", "fatherbrown.png"]
+		    ["Sherlock Holmes", "sherlock.png", ["Excellent on a crime scene", "Peerless at deduction", "The spark of creative genius that enable him to solve the toughest mysteries", "Stylish"], ["His treatment of Doctor Watson and Mrs Hudson often leaves a lot to be desired", "His arrogance often comes at a cost of some anxiety to his clients"]],
+				["Hercule Poirot", "hercule.png", [""], [""]],
+				["Columbo", "columbo.png", [""], [""]],
+				["Miss Marple", "missmarple.png", [""], [""]],
+				["Magnum PI", "magnum.png", [""], [""]],
+				["Father Brown", "fatherbrown.png", [""], [""]],
 			];		
       for (var i = 0; i < detective_data.length; i++) {
         Detectives.insert({
           name: detective_data[i][0],
-          description: detective_data[i][1],
-          imagename: detective_data[i][2],
+          imagename: detective_data[i][1],
+          pros: detective_data[i][2],
+          cons: detective_data[i][3],
           votes: 0
        });
       } 
