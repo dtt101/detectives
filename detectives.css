@@ -143,21 +143,6 @@
 .clearfix {
 	display: block;
 }
-/* custom styles */
-@media screen and (max-width: 320px) {
-	.grid_1,
-	.grid_2,
-	.grid_3 {	
-		display: block;
-		float: none;
-	}
-	.clear {
-		display: none;
-	}
-	div#essay {
-		padding-right: 0px;
-	}
-}
 div#essay {
 	padding-right: 50px;
 }
@@ -197,4 +182,26 @@ div#essay {
 }
 
 .none {
+}
+/* custom styles */
+@media screen and (max-width: 320px) {
+	.grid_1,
+	.grid_2,
+	.grid_3 {	
+		display: block;
+		float: none;
+	}
+	.clear {
+		display: none;
+	}
+	div#essay {
+		padding-right: 0px;
+		width: 250px;
+	}
+	.detective {
+		height: auto;
+	}
+	.detective .image {
+		display: block;
+	}
 }
