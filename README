@@ -1,30 +1,4 @@
-This is an example app, built using the meteor js framework (meteor.com)
-
-I am not one to dispense social advice lightly. Personally I have a tendency to make acerbic comments ill-suited for the humour of the occasion. If I have discovered one thing it is this: a rare social scene is the one that cannot become completely absorbed in answering the question 'Who is the greatest detective of all time?'
-
-As you will discover following some early, often pitifully emotionally-driven and illogical debate, it becomes necessary to set some criteria for judging. The establishment of these criteria alone can take many, many years to agree and finalise.
-Luckily I have devoted a not inconsiderable amount of time to identifying these elusive criteria, and am happy to share them with you now. The understanding is, of course, that you are more than welcome to disagree with me, but I expect intellectual rigour and incontrovertable evidence before I will even begin to countenance any change.
-
-Criteria:
-
-Average bodycount
-Performance on crime scene
-Witness & suspect interview tactics
-Creativity
-Deductive prowess
-Character/treatment of sidekick
-Intelligence
-Not being Jessica Fletcher...
-...or the killer gardners, Rosemary & Thyme
-
-In short, I present to you a shortlist of great detectives.
-Vote for the greatest and tell all your friends.
-
-If you think there is somebody that should be on this list, mention it in the comments below, and hope.
-I warn you: Batman is not a detective and Lord Peter Whimsy is an arse.
-
-The competition will end when we reach 10000 votes, and then, only then, will the question of 'Who is the greatest detective?' be answered.
-
+An example project built in Meteor, expanding on the Leaderboard example to no great effect.
 == Sherlock
 
 Pros: 
