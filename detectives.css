@@ -153,23 +153,39 @@ div#essay {
 }
 .detective {
 	margin-bottom:30px;
-	height: 204px;
+	display: block;
+	position:relative;
 	cursor: pointer;
 }
 .detective h4 {
 	margin-bottom:0;
 }
 .detective .name {
-	font-weight: bold;
+	display: block;
+	margin-bottom: 20px;
 }
-.detective .description {
+.detective .pros, .detective .cons {
+	position: absolute;
+	top: 42px;
+	left: 210px;
+	width: 200px;
+	list-style-position: outside;
+}
+.detective .cons {
+	left: 440px;
 }
 .detective .image {
-	float:left;
 	width: 174px;
 	height: 204px;
 }
 .detective .votes {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 204px;
+	width: 174px;
+	height: 20px;
+	background-color: #fff;
 }
 .detective .action {
   visibility: hidden;
@@ -210,5 +226,8 @@ div#essay {
 	}
 	.detective .image {
 		display: block;
+	}
+	.detective .description {
+		margin-left: 0px;
 	}
 }
