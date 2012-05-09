@@ -227,7 +227,11 @@ div#essay {
 	.detective .image {
 		display: block;
 	}
-	.detective .description {
-		margin-left: 0px;
+	.detective .pros, .detective .cons {
+		position: relative;
+		display: block;
+		top: 0px;
+		left: 0px;
+		width: auto;
 	}
 }
