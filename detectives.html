@@ -5,14 +5,13 @@
 
 <body>
   <div class="container container_3">
-    <h2 class="grid_3">
-      Who is the greatest detective of all time?
-    </h2>
+    <h1 class="grid_3">
+      Who is the greatest detective?
+    </h1>
     <div class='clear'>&nbsp;</div>
     
     <div class='grid_1'>
       <div id="essay">
-        <!--
 <p>I am not one to dispense social advice lightly. Personally I have a tendency to make acerbic comments ill-suited for the humour of the occasion. If I have discovered one thing it is this: a rare social scene is the one that cannot become completely absorbed in answering the following question:<br /><strong>'Who is the greatest detective of all time?'</strong></p>
 
 <p>As you will discover following some early, often pitifully emotionally-driven and illogical debate, it becomes necessary to set some criteria for judging. The establishment of these criteria alone can take many, many years to agree and finalise.</p>
@@ -38,13 +37,12 @@ Vote for the greatest and tell all your friends.
 If you think there is somebody that should be on this list, mention it in the comments below, and hope.<br />
 I warn you: Batman is not a detective and Lord Peter Wimsey is an arse.
 </p>
--->
 <p>
 The competition will end when we reach 10000 votes, and then, only then, will the question of 'Who is the greatest detective?' be answered.
 </p>
       </div>
       </div><div class='grid_2'>
-      <h4>Choose your detective...</h4>
+      <h4>Select a detective and vote...</h4>
       {{> thelist}}
       </div>
       <div class='clear'>&nbsp;</div>    
@@ -73,7 +71,7 @@ The competition will end when we reach 10000 votes, and then, only then, will th
         <li>{{this}}</li>
       {{/each}}
     </ul>
-    <span class="votes">{{votes}}</span>
+    <span class="votes"><strong>{{votes}}</strong> votes</span>
     {{#unless voted}}
     <span class="action"><input type="button" class="vote" value="Vote"></span>
     {{/unless}}

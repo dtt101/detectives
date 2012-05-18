@@ -148,6 +148,12 @@
 body {
 	padding-top: 20px;
 }
+.grid_3 {
+	text-align: center;
+}
+h1 {
+	margin-bottom:80px;
+}
 div#essay {
 	padding-right: 50px;
 }
@@ -155,10 +161,10 @@ div#essay {
 	margin-bottom:30px;
 	display: block;
 	position:relative;
-	cursor: pointer;
 }
 .detective h4 {
 	margin-bottom:0;
+	cursor: pointer;
 }
 .detective .name {
 	display: block;
@@ -177,33 +183,35 @@ div#essay {
 .detective .image {
 	width: 174px;
 	height: 204px;
+	cursor: pointer;
 }
 .detective .votes {
 	display: block;
 	position: absolute;
 	left: 0;
-	top: 204px;
+	padding: 3px;
+	top: 210px;
 	width: 174px;
-	height: 20px;
-	background-color: #fff;
+
+	background-color: rgba(255,255,255,0.8);
+	font-size: 1.5em;
+	text-align: center;
+	cursor: pointer;
+	
 }
 .detective .action {
   visibility: hidden;
+  position: absolute;
+  top: 0;
 }
 .detective.selected {
-  background-color: yellow;
+
 }
 .detective.selected .action {
   visibility: visible;
 }
 .detective.selected .votes {
   color: black;
-}
-
-.details, .none { 
-}
-
-.none {
 }
 
 /* mobile styles */
