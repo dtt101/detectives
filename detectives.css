@@ -200,20 +200,9 @@ div#essay {
 	
 }
 .detective .action {
-  visibility: hidden;
   position: absolute;
   top: 0;
 }
-.detective.selected {
-
-}
-.detective.selected .action {
-  visibility: visible;
-}
-.detective.selected .votes {
-  color: black;
-}
-
 /* mobile styles */
 @media screen and (max-width: 320px) {
 	.grid_1,

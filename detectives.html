@@ -38,14 +38,17 @@ If you think there is somebody that should be on this list, mention it in the co
 <p>
 The competition will end when we reach 10000 votes, and then, only then, will the question of 'Who is the greatest detective?' be answered.
 </p>
+<p>
+<iframe allowtransparency="true" frameborder="0" scrolling="no"
+src="//platform.twitter.com/widgets/tweet_button.html"
+style="width:130px; height:20px;"></iframe>
+</p>
       </div>
       </div><div class='grid_2'>
-      <h4>Select a detective and vote...</h4>
       {{> thelist}}
       </div>
       <div class='clear'>&nbsp;</div>    
   </div>
-
 </body>
 
 <template name="thelist">
@@ -56,7 +59,7 @@ The competition will end when we reach 10000 votes, and then, only then, will th
 </template>
 
 <template name="detective">
-  <div class="detective {{selected}}">
+  <div class="detective">
     <h4><span class="name">{{name}}</span></h4>
     <span class="image"><img src="{{imagename}}"></span>
     <ul class="pros">
