@@ -197,7 +197,6 @@ div#essay {
 	font-size: 1.5em;
 	text-align: center;
 	cursor: pointer;
-	
 }
 .detective .action {
   position: absolute;
@@ -231,5 +230,10 @@ div#essay {
 		top: 0px;
 		left: 0px;
 		width: auto;
+	}
+	.detective .action {
+		position: relative;
+		top: 0;
+		left: 0px;
 	}
 }
