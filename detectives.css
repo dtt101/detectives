@@ -151,8 +151,11 @@ body {
 .grid_3 {
 	text-align: center;
 }
-h1 {
+p.caption {
+	text-align: center;
+	font-weight: bold;
 	margin-bottom:80px;
+	font-variant:small-caps;
 }
 div#essay {
 	padding-right: 50px;
